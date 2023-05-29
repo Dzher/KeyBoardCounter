@@ -1,2 +1,2 @@
-#include <QMainWindow>
+#include <QtWidgets/QMainWindow>
 #include <iostream>
