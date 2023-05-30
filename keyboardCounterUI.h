@@ -1,19 +1,24 @@
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QTabWidget>
 #include <iostream>
+#include <vector>
 
 #ifndef _KEYBOARDCOUNTERUI_H_
-#    define _KEYBOARDCOUNTERUI_H_
+#define _KEYBOARDCOUNTERUI_H_
+
 namespace kbcUI {
-class KeyboardCounterUI : public QTabWidget
-{
-    Q_OBJECT
+class KeyboardCounterUI : public QTabWidget {
+  Q_OBJECT
 public:
-    KeyboardCounterUI(const QString& name, QWidget* parent = nullptr)
-        : QTabWidget(parent)
-    {}
+  KeyboardCounterUI(const QString &name, QWidget *parent = nullptr)
+      : QTabWidget(parent) {}
 
 private:
+  struct UiElement {
+    std::vector<QLabel *> key_lbls;
+    std::vector<long long> key_counts;
+  } ui_;
 };
-}   // namespace kbcUI
+} // namespace kbcUI
 
-#endif   //_KEYBOARDCOUNTERUI_H_
+#endif //_KEYBOARDCOUNTERUI_H_

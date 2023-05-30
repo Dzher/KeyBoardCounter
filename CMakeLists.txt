@@ -16,6 +16,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+add_executable(counter ${PROJECT_SOURCES})
+
 # This tells CMake to look up Qt 5, and import the Widgets module.
 # There is no point in continuing if CMake cannot locate the module, so we do set the REQUIRED flag to let CMake abort in this case.
 # find_package(Qt5 REQUIRED COMPONENTS Widgets)
