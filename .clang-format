@@ -1,3 +1,51 @@
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html
 # https://www.bbsmax.com/A/VGzlMjexJb/
 Language: Cpp
+AccessModifierOffset: -4
+AlignAfterOpenBracket: Align
+AlignConsecutiveMacros: None
+AlignConsecutiveAssignments: None
+AlignConsecutiveBitFields: None
+AlignConsecutiveDeclarations: None
+AlignEscapedNewlines: Right
+AlignOperands:Align
+AlignTrailingComments: true
+AIlowAIlArgumentsOnNextLine: true
+AllowAllConstructorInitializersOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortEnumsOnASingleLine: false
+AllowShortBlocksOnAsingleLine: Never
+AllowShortCaseLabelsOnAsingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortLambdasOnASingleLine: All
+AllowShortIfstatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+AlwaysBreakTemplateDeclarations: Yes
+AttributeMacros:
+  - __capability
+BinPackArguments: true
+BinPackParameters: true
+
+BraceWrapping:
+    AfterCaseLabel: false
+    AfterClass:true
+    AfterControlStatement: Always
+    AfterEnum:true
+    AfterFunction:true
+    AfterNamespace: true
+    AfterObjCDeclaration:true
+    AfterStruct:true
+    AfterUnion :false
+    AfterExternBlock: true
+    BeforeCatch:true
+    BeforeElse:true
+    BeforeLambdaBody: false
+    BeforeWhile:false
+    IndentBraces:false
+    SplitEmptyFunction: true
+    SplitEmptyRecord: true
+    SplitEmptyNamespace: true
+BreakBeforeBinaryOperators: NonAssignment
