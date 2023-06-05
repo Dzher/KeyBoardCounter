@@ -18,4 +18,5 @@ namespace kbcConfig
         static constexpr int kDeleteTypeNum = 2;
     };
 }
+
 #endif //_KEYBOARDCOUNTERCONFIG_H_

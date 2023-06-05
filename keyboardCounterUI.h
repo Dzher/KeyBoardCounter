@@ -11,9 +11,10 @@ namespace kbcUI
   class KeyboardCounterUI : public QTabWidget
   {
     Q_OBJECT
+
   public:
-    KeyboardCounterUI(const QString &name, QWidget *parent = nullptr)
-        : QTabWidget(parent) {}
+    KeyboardCounterUI(const QString &name, QWidget *parent = nullptr);
+    ~KeyboardCounterUI() = default;
 
   private:
     void initUi();
