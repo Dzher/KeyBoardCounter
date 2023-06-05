@@ -4,6 +4,7 @@ set(PROJECT_SOURCES
     main.cpp
     keyboardCounterUI.cpp
     keyboardCounterUI.h
+    keyboardConfig.h
 )
 project(PROJECT_NAME VERSION 1.0.0 LANGUAGES CXX)
 

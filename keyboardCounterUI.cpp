@@ -2,3 +2,7 @@
 
 using namespace kbcUI;
 
+void KeyboardCounterUI::initUi()
+{
+    
+}
