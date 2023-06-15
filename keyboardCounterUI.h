@@ -1,4 +1,5 @@
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QTabWidget>
 #include <iostream>
 #include <vector>
@@ -18,12 +19,15 @@ namespace kbcUI
 
   private:
     void initUi();
+    void initKeyLabels();
+    void initKeyCounts();
+    void setupLayout();
 
   private:
     struct UiElement
     {
-      std::vector<QLabel *> key_lbls;
-      std::vector<long long> key_counts;
+      std::vector<QPushButton *> key_pbts;
+      std::vector<QLabel *> key_counts;
     } ui_;
   };
 } // namespace kbcUI

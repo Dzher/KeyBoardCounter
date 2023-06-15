@@ -19,7 +19,11 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-set(QT_DIR C:/Qt/Qt5.13.2/5.13.2/mingw73_64/lib/cmake/Qt5) 
+# set(CMAKE_PREFIX_PATH C:/msys64/mingw64)
+# set(QT_DIR C:/msys64/mingw64/lib/cmake/Qt5)
+
+# set(QT_DIR C:/Qt/Qt5.13.2/5.13.2/mingw73_64/lib/cmake/Qt5) 
+
 find_package(Qt5 COMPONENTS Core Gui Widgets REQUIRED)
 
 include_directories(${QT_INCLUDES})
